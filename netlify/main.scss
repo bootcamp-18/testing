@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.g-center {
+  display: grid;
+  place-items: center;
+}
+.f-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-3 {
+  @extend .g-center;
+  flex-direction: column;
+  gap: 4rem;
+  h1 {
+    font-weight: bold;
+    font-size: 75px;
+  }
+  .section-3-texts {
+    @extend .g-center;
+    gap: 2rem;
+    p {
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    div {
+      @extend .f-center;
+      flex-direction: column;
+      p {
+        font-size: 23px;
+      }
+    }
+  }
+  .section-3-bottom {
+    @extend .g-center;
+    grid-template-columns: 1fr 1fr 1fr;
+    .section-3-left {
+        transform: translateY(-90px);
+      @extend .g-center;
+      height: 250px;
+      .titles {
+        @extend .g-center;
+        p {
+          font-weight: bold;
+          font-size: 23px;
+          letter-spacing: 1px;
+        }
+        h2 {
+          font-size: 50px;
+        }
+      }
+    }
+    .section-3-center {
+      @extend .f-center;
+      width: 430px;
+    }
+    .section-3-right {
+      transform: translateY(-90px);
+      @extend .g-center;
+      height: 250px;
+      .titles {
+        @extend .g-center;
+        p {
+          font-weight: bold;
+          font-size: 23px;
+          letter-spacing: 1px;
+        }
+        h2 {
+          font-size: 50px;
+        }
+      }
+    }
+  }
+  .klik {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  .location {
+    position: relative;
+    .los-angels {
+      position: absolute;
+      @extend .g-center;
+      height: 125px;
+      .loc {
+        margin: 0;
+      }
+    }
+    .dallas {
+      position: absolute;
+      @extend .g-center;
+      height: 125px;
+      .loc {
+        margin: 0;
+      }
+    }
+    .london {
+      position: absolute;
+      @extend .g-center;
+      height: 125px;
+      .loc {
+        margin: 0;
+      }
+    }
+    .tokyo {
+      position: absolute;
+      @extend .g-center;
+      height: 125px;
+      .loc {
+        margin: 0;
+      }
+    }
+    .line {
+      position: absolute;
+      bottom: -40px;
+      z-index: -1;
+      left: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+    .section-3 {
+      background-color: red;
+        @extend .g-center;
+        flex-direction: column;
+        gap: 4rem;
+        h1 {
+          width: 100vw;
+          font-weight: bold;
+          font-size: 45px;
+        }
+    
+    .section-3-texts {
+        @extend .g-center;
+        gap: 2rem;
+        p {
+          font-size: 10px;
+          font-weight: bold;
+          
+        }
+        div {
+          @extend .f-center;
+          flex-direction: column;
+          p {
+            font-size: 13px;
+          }
+        }
+      }
+      .section-3-bottom {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .section-3-left {
+              @extend .g-center;
+              margin-bottom: 40px;
+
+          }
+          .section-3-right {
+              z-index: 1;
+              padding-top: 150px;
+              display: flex;
+              flex-direction: column-reverse;
+              justify-content: space-between;
+              height: 360px;
+              margin: 0;
+              
+
+
+          }
+          .section-3-center {
+              position: relative;
+           
+            .tel2 {
+                position: absolute;
+                left: 220px;
+                top: 120px;
+            }
+          }
+      }
+      .location {
+          position: relative;
+          .line {
+              position: absolute;
+              left: -300px;
+              width: 100vw;
+              bottom: -120px;
+          }
+          .los-angels {
+              position: absolute;
+              left: -250px;
+              top: 40px;
+          }
+          .dallas {
+              position: absolute;
+              left: -100px;
+              top: -10px;
+          }
+          .london {
+              position: absolute;
+              left: 30px;
+              top: -10px;
+          }
+          .tokyo {
+              position: absolute;
+              left: 180px;
+              top: 40px;
+          }
+
+      }
+}
+}

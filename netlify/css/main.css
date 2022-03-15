@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.g-center, .section-3 .location .tokyo, .section-3 .location .london, .section-3 .location .dallas, .section-3 .location .los-angels, .section-3 .section-3-bottom .section-3-right .titles, .section-3 .section-3-bottom .section-3-right, .section-3 .section-3-bottom .section-3-left .titles, .section-3 .section-3-bottom .section-3-left, .section-3 .section-3-bottom, .section-3 .section-3-texts, .section-3 {
+  display: grid;
+  place-items: center;
+}
+
+.f-center, .section-3 .section-3-bottom .section-3-center, .section-3 .section-3-texts div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-3 {
+  flex-direction: column;
+  gap: 4rem;
+}
+.section-3 h1 {
+  font-weight: bold;
+  font-size: 75px;
+}
+.section-3 .section-3-texts {
+  gap: 2rem;
+}
+.section-3 .section-3-texts p {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.section-3 .section-3-texts div {
+  flex-direction: column;
+}
+.section-3 .section-3-texts div p {
+  font-size: 23px;
+}
+.section-3 .section-3-bottom {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.section-3 .section-3-bottom .section-3-left {
+  transform: translateY(-90px);
+  height: 250px;
+}
+.section-3 .section-3-bottom .section-3-left .titles p {
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+.section-3 .section-3-bottom .section-3-left .titles h2 {
+  font-size: 50px;
+}
+.section-3 .section-3-bottom .section-3-center {
+  width: 430px;
+}
+.section-3 .section-3-bottom .section-3-right {
+  transform: translateY(-90px);
+  height: 250px;
+}
+.section-3 .section-3-bottom .section-3-right .titles p {
+  font-weight: bold;
+  font-size: 23px;
+  letter-spacing: 1px;
+}
+.section-3 .section-3-bottom .section-3-right .titles h2 {
+  font-size: 50px;
+}
+.section-3 .klik {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.section-3 .location {
+  position: relative;
+}
+.section-3 .location .los-angels {
+  position: absolute;
+  height: 125px;
+}
+.section-3 .location .los-angels .loc {
+  margin: 0;
+}
+.section-3 .location .dallas {
+  position: absolute;
+  height: 125px;
+}
+.section-3 .location .dallas .loc {
+  margin: 0;
+}
+.section-3 .location .london {
+  position: absolute;
+  height: 125px;
+}
+.section-3 .location .london .loc {
+  margin: 0;
+}
+.section-3 .location .tokyo {
+  position: absolute;
+  height: 125px;
+}
+.section-3 .location .tokyo .loc {
+  margin: 0;
+}
+.section-3 .location .line {
+  position: absolute;
+  bottom: -40px;
+  z-index: -1;
+  left: 0;
+}
+
+@media screen and (max-width: 575px) {
+  .section-3 {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .section-3 h1 {
+    display: grid;
+    place-items: center;
+    width: 95vw;
+    font-weight: bold;
+    font-size: 40px;
+  }
+  .section-3 .section-3-texts {
+    gap: 2rem;
+  }
+  .section-3 .section-3-texts p {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .section-3 .section-3-texts div {
+    flex-direction: column;
+  }
+  .section-3 .section-3-texts div p {
+    font-size: 13px;
+  }
+  .section-3 .section-3-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .section-3 .section-3-bottom .section-3-left {
+    margin-bottom: 40px;
+  }
+  .section-3 .section-3-bottom .section-3-right {
+    z-index: 1;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 360px;
+    margin: 0;
+  }
+  .section-3 .section-3-bottom .section-3-center {
+    position: relative;
+  }
+  .section-3 .section-3-bottom .section-3-center .tel2 {
+    position: absolute;
+    left: 220px;
+    top: 120px;
+  }
+  .section-3 .location {
+    position: relative;
+  }
+  .section-3 .location .line {
+    position: absolute;
+    left: -300px;
+    width: 100vw;
+    bottom: -120px;
+  }
+  .section-3 .location .los-angels {
+    position: absolute;
+    left: -250px;
+    top: 40px;
+  }
+  .section-3 .location .dallas {
+    position: absolute;
+    left: -100px;
+    top: -10px;
+  }
+  .section-3 .location .london {
+    position: absolute;
+    left: 30px;
+    top: -10px;
+  }
+  .section-3 .location .tokyo {
+    position: absolute;
+    left: 180px;
+    top: 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

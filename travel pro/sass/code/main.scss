@@ -1,0 +1,192 @@
+@import "utils";
+
+.container {
+  .header {
+    height: 600px;
+    .navbar {
+      padding-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .nav-right {
+        @extend %flex;
+        width: 650px;
+        color: $black2;
+      }
+    }
+    .head {
+      display: grid;
+
+      .head-left {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        line-height: 3rem;
+        h1 {
+          .h1 {
+            color: #db6300;
+          }
+        }
+      }
+      .search {
+        padding: 1rem;
+        background: rgba(199, 238, 237, 0.05);
+        border: 1px solid #cacaca;
+        box-sizing: border-box;
+        border-radius: 16px;
+        width: 800px;
+        height: 80px;
+        @extend %flex;
+        position: relative;
+        top: 100px;
+        input {
+          border-radius: 8px;
+          background: #ffffff;
+          border: none;
+          outline: none;
+        }
+        h4 {
+          padding: 0;
+          margin: 0;
+        }
+        .btn {
+          padding: 10px;
+          width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+
+    .bg-img {
+      position: absolute;
+      top: 90px;
+      right: 100px;
+      width: 550px;
+      height: 550px;
+      z-index: -2;
+    }
+    .bg-img2 {
+      position: absolute;
+      top: 510px;
+      right: 100px;
+      width: 144.93px;
+      height: 100px;
+      z-index: -1;
+    }
+  }
+}
+.choose-us {
+  padding: 120px 7rem 0px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .choose-us-right {
+    p {
+      padding: 2rem 0;
+    }
+    .three {
+      padding: 3rem 0;
+      height: 100px;
+      width: 400px;
+      @extend %flex;
+      div {
+        display: grid;
+        gap: 1rem;
+      }
+    }
+  }
+}
+.services {
+  @extend %grid-center;
+  gap: 1rem;
+  .boxes {
+    @extend %grid-center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    .box {
+      @extend %grid-center;
+      background: #fafaff;
+      border-radius: 24px;
+      width: 250px;
+      height: 350px;
+      margin-bottom: 5rem;
+
+      &:hover {
+        box-shadow: 0px 2px 20px 4px #d8d8d8;
+        .btn-2 {
+          @extend .btn;
+          color: #ffffff;
+        }
+      }
+
+      p {
+        font-family: "inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        color: #666666;
+      }
+      .btn-2 {
+        border: 2px solid #db6300;
+        box-sizing: border-box;
+        border-radius: 10px;
+        width: 150px;
+        height: 40px;
+        color: #db6300;
+      }
+    }
+  }
+}
+.foot {
+  padding-top: 2rem;
+  @extend %grid-center;
+  gap: 1rem;
+  color: #ffffff;
+  background: linear-gradient(rgba(240, 108, 0, 0.8), rgba(240, 108, 0, 0.8)),
+    url(../images/image6.png);
+
+  height: 450px;
+  p {
+    color: #ffffff;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 600px;
+    border-radius: 10px;
+    height: 50px;
+    padding: 1rem;
+    input {
+      border: none;
+      outline: none;
+    }
+  }
+  .menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1000px;
+    h3 {
+      padding: 1rem 0;
+      padding-left: 2rem;
+    }
+    h2 {
+      padding: 1rem 0;
+    }
+
+    .icons {
+      @extend %flex;
+      width: 150px;
+      
+    }
+  }
+  .end {
+    padding-bottom: 1rem;
+  }
+}

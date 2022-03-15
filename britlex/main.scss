@@ -1,0 +1,331 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+}
+p {
+  color: #8f95a5;
+}
+
+.felx {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.btn {
+  width: 170px;
+  height: 40px;
+  background: #263238;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.box {
+  padding: 0 1rem;
+  display: grid;
+  gap: 1rem;
+  margin: 0;
+}
+
+.container {
+  padding: 0 5rem;
+  background: #e5e5e5;
+  margin: 0;
+
+  .navbar {
+    @extend .felx;
+    height: 4rem;
+    .nav {
+      @extend .felx;
+      width: 400px;
+    }
+    .btn-1 {
+      border: 2px solid #263238;
+      box-sizing: border-box;
+      border-radius: 5px;
+      width: 150px;
+      height: 50px;
+    }
+    .nav-hidden {
+      display: none;
+      
+      flex-direction: column;
+      
+      justify-content: space-between;
+      height: 24px;
+      border: none;
+      
+      div {
+        height: 5px;
+        width: 2rem;
+        background: #39515E;
+        border-radius: 1px;
+      }
+      .short {
+        width: 1.5rem;
+
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .navbar {
+      .nav {
+        display: none;
+
+      }
+      .btn-1 {
+        display: none;
+      }
+      .nav-hidden {
+        display: flex;
+      }
+    }
+  }
+  
+  .header {
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: 1fr 1fr;
+    .head-left {
+      display: grid;
+      gap: 2rem;
+      .title {
+        @extend .felx;
+        justify-content: start;
+        h1 {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 60px;
+          line-height: 70px;
+        }
+      }
+      .btn {
+        width: 350px;
+        height: 100px;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 54px;
+        border-radius: 15px;
+      }
+
+    }
+    .head-right {
+      display: grid;
+      justify-content: end;
+      padding: 0;
+      margin: 0;
+      img {
+        width: 500px;
+        height: 550px;
+      }
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .header {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column-reverse;
+      .head-right {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+    }
+  }
+}
+  .skils {
+    h1 {
+      padding: 4rem 0;
+    }
+    @extend .grid-center;
+    .skils-box {
+      @extend .grid-center;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      .speaking {
+        display: grid;
+        width: 390px;
+        height: 894px;
+        background: #f5f5f5;
+        border-radius: 10px;
+        img {
+          width: 350px;
+        }
+      }
+      .skils-right {
+        display: grid;
+        gap: 1rem;
+        .up {
+          @extend .grid-center;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          .writing {
+            width: 380px;
+            height: 518px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            img {
+              height: 230px;
+            }
+          }
+          .reading {
+            width: 380px;
+            height: 518px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            img {
+              width: 260px;
+              height: 230px;
+            }
+          }
+        }
+        .listening {
+          @extend .felx;
+          width: 780px;
+          height: 360px;
+          background: #f5f5f5;
+          border-radius: 10px;
+          div {
+            display: grid;
+            gap: 1rem;
+          }
+          img {
+            width: 350px;
+          }
+        }
+      }
+    }
+  }
+  .about_us {
+    padding: 4rem 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    .about-left {
+      display: grid;
+      gap: 2rem;
+      .about-bottom {
+        @extend .felx;
+        width: 500px;
+        .num {
+          @extend .grid-center;
+        }
+      }
+    }
+    .about-right {
+      display: grid;
+      justify-content: end;
+    }
+  }
+  .pricing {
+    h1 {
+      padding: 2rem;
+      @extend .grid-center;
+    }
+    .pricing-boxes {
+      @extend .grid-center;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      .pricing-box {
+        display: grid;
+        gap: 1rem;
+        img {
+          width: 350px;
+          height: 350px;
+        }
+        p {
+          height: 75px;
+        }
+        span {
+          padding: 8px;
+          display: inline-block;
+          width: 170px;
+          height: 45px;
+          background: #eeeeee;
+          border-radius: 5px;
+          .bold {
+            display: inline-block;
+            font-weight: bold;
+            font-size: larger;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 420px){
+    .pricing {
+
+      .pricing-boxes {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    
+  }
+  .contact-us {
+    padding: 2rem 0;
+    @extend .grid-center;
+    gap: 1rem;
+    .contact-big {
+      @extend .grid-center;
+      grid-template-columns: 1fr 1.5fr;
+      .contact-right {
+        display: grid;
+        gap: 2rem;
+        .email {
+          @extend .grid-center;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          width: 350px;
+          height: 50px;
+          border: 1px solid #8f95a5;
+          box-sizing: border-box;
+          border-radius: 10px;
+          .btn {
+            height: 50px;
+            border-radius: 10px;
+          }
+          input {
+            padding: 0 1rem;
+            border: none;
+            outline: none;
+            background: #e5e5e5;
+            width: 340px;
+          }
+        }
+      }
+    }
+    .line {
+      height: 2px;
+      width: 1189px;
+      border: 1px solid #c4c4c4;
+    }
+    .foot {
+      padding-top: 1rem;
+      width: 1189px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+@media screen and (max-width: 575px) {
+  .container {
+    padding: 1rem;
+}
+}

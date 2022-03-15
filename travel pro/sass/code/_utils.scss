@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+
+}
+
+$black1:#474747;
+$black2:#666666;
+
+
+.wrapper {
+    padding: 0 7rem;
+
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+%grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.btn {
+    background: #DB6300;
+    border-radius: 10px;
+    width: 150px;
+    height: 40px;
+    color: #fff;
+    border: none;
+}
+
+a {
+    color: $black2;
+}
+p {
+    color: $black2;
+    
+}
+span {
+    color: $black2;
+
+}
+hr {
+    width: 900px;
+}

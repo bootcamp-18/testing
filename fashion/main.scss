@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+$light: #fff9ed;
+
+.collection {
+  margin: 4rem 0;
+  @extend .flex;
+  .collect {
+    @extend .flex;
+    flex-direction: column;
+    img {
+      width: 250px;
+      height: 240px;
+    }
+  }
+}
+
+.btn {
+  background: #ff730d;
+
+  border-radius: 8px;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+}
+.grid {
+  display: grid;
+  place-items: center;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper {
+  padding: 0 8rem;
+}
+.container {
+  //   margin: 3rem;
+
+  .navbar {
+    @extend .flex;
+
+    .nav-left {
+      @extend .flex;
+      width: 700px;
+    }
+    .nav-menu {
+      ul {
+        @extend .flex;
+        width: 400px;
+      }
+    }
+    .nav-right {
+      @extend .flex;
+      width: 150px;
+    }
+  }
+  .header {
+    height: 600px;
+    width: 100vw;
+    @extend .flex;
+    background-color: $light;
+    .head-left {
+      display: grid;
+      width: 500px;
+      
+    }
+    .head-right {
+      background-image: url(./images/bg-img.png);
+      position: relative;
+      left: 0;
+      background-size: 550px 600px;
+      width: 550px;
+      height: 600px;
+      background-repeat: no-repeat;
+    }
+  }
+  .head-buttom {
+    background: #ffffff;
+    box-shadow: 0px 3px 12px rgba(82, 61, 61, 0.08);
+    border-radius: 20px;
+    position: relative;
+    left: 100px;
+    top: -50px;
+    width: 1130px;
+    @extend .grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    .h-buttom {
+      @extend .flex;
+      width: 300px;
+      height: 100px;
+    }
+  }
+  .section-1 {
+      height: 300px;
+    .sec-1-title {
+        @extend .flex;
+        margin: 4rem 0;
+    }
+    .section-1-top {
+      @extend .flex;
+    }
+    .section-1-buttom {
+      @extend .grid;
+      grid-template-columns: 1fr 1fr;
+      .section-1-left {
+        position: relative;
+        @extend .flex;
+        background-color: $light;
+        width: 500px;
+        height: 200px;
+        img {
+          position: absolute;
+          left: 250px;
+          top: -50px;
+          width: 250px;
+          height: 250px;
+        }
+      }
+      .section-1-right {
+        position: relative;
+        @extend .grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $light;
+        width: 500px;
+        height: 200px;
+        img {
+          position: absolute;
+          left: 250px;
+          top: -50px;
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+  }
+  .arrival {
+      margin: 4rem 0;
+    .arrival-top {
+      @extend .flex;
+    }
+    .arrival-buttom {
+      @extend .flex;
+      .collect {
+        img {
+          width: 250px;
+          height: 240px;
+        }
+      }
+    }
+  }
+  .discount {
+    margin: 4rem 0;
+
+    height: 500px;
+    @extend .flex;
+    grid-template-columns: 1fr 1fr;
+    .discount-right {
+      @extend .grid;
+      gap: 1rem;
+      background-color: #ebf9ff;
+      height: 500px;
+      width: 500px;
+    }
+    .discount-left {
+      background-image: url(./images/photo_2022-03-03_19-57-55.jpg);
+      position: relative;
+      left: 0;
+      background-size: 550px 500px;
+      width: 550px;
+      height: 500px;
+
+      background-repeat: no-repeat;
+    }
+  }
+  .trend {
+      .trend-top{
+          @extend .flex
+      }
+      .trend-buttom {
+           @extend .flex;
+      
+          .trend-left {
+              position: relative;
+              background-image: url(./images/buttom-bg.png);
+              width: 500px;
+              height: 500px;
+              div {
+                  width: 350px;
+                  height: 180px;
+                  background: #673613;
+                  opacity: 0.8;
+                  border-radius: 50px 50px 0px 0px;
+                  position: absolute;
+                  bottom: 0;
+                  left: 80px;
+                  @extend .grid;
+                  gap: 1rem;
+                  h1 {
+                      color: #fff;
+                  }
+                  p {
+                      color: #fff;
+                  }
+              }
+              
+            }
+            .trend-right {
+                @extend .grid;
+                gap: 2rem;
+                grid-template-rows: 1fr 1fr;
+                .t-r-top {
+                    @extend .grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                    div {
+                        @extend .grid;
+                        gap: 1rem;
+                    }
+                }
+                .t-r-buttom {
+                    
+                    @extend .grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                    div {
+                        @extend .grid;
+                        gap: 1rem;
+                    }
+                }
+
+            }
+            
+        }
+    }
+  }
